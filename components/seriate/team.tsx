@@ -65,18 +65,20 @@ export function Team() {
           {/* Ashish Seth */}
           <div className="flex flex-col gap-6 rounded-2xl border border-slate-200 bg-slate-50/50 p-6 shadow-sm sm:p-8">
             <div className="flex items-center gap-6">
-              <div className="flex size-20 shrink-0 items-center justify-center rounded-2xl bg-slate-200 text-xl font-bold text-slate-500 shadow-sm">
-                AS
-              </div>
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-6K3eS2vDWqhk2mm5Bf4H13wtSLb4Xq.png"
+                alt="Mr. Ashish Seth"
+                className="size-20 shrink-0 rounded-2xl object-cover shadow-sm bg-slate-200"
+              />
               <div>
-                <h3 className="text-xl font-bold text-slate-900">Ashish Seth</h3>
+                <h3 className="text-xl font-bold text-slate-900">Mr. Ashish Seth</h3>
                 <p className="mt-1 text-sm font-medium text-cobalt">
-                  Managing Director | Co-Founder
+                  Co-Founder
                 </p>
               </div>
             </div>
             <p className="text-sm leading-relaxed text-slate-600 flex-1">
-              Ashish is the Managing Director at Mec Fab Engineering Works. He brings deep operational expertise in project management, strategic and international sourcing, and engineering design to guide the scalable manufacturing of Seriate's technology.
+              Mr. Seth brings over 25 years of experience in strategic sourcing, project management, and design. With a background in Six Sigma methodologies, international procurement, and lean manufacturing, he leads hardware development and production at Seriate to deliver reliable, high-performance equipment.
             </p>
             <div className="mt-2 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
               <a
