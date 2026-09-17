@@ -66,7 +66,7 @@ export function Team() {
           <div className="flex flex-col gap-6 rounded-2xl border border-slate-200 bg-slate-50/50 p-6 shadow-sm sm:p-8">
             <div className="flex items-center gap-6">
               <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-3ePyHZ2RmDydgh1O9mU7PY1vrG6Xon.png"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-6K3eS2vDWqhk2mm5Bf4H13wtSLb4Xq.png"
                 alt="Mr. Ashish Seth"
                 className="size-20 shrink-0 rounded-2xl object-cover shadow-sm bg-slate-200"
               />
