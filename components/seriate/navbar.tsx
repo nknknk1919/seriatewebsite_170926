@@ -13,8 +13,8 @@ const navLinks = [
 const applicationsLinks = [
   { label: 'Topical Pharmaceuticals & Dermatology', href: '/#pharma' },
   { label: 'Personal Care & Cosmetics', href: '/#personal-care' },
-  { label: 'Energy & Advanced Materials', href: '/#energy' },
   { label: 'Functional Foods & Nutraceuticals', href: '/#foods' },
+  { label: 'Energy & Advanced Materials', href: '/#energy' },
 ]
 
 const aboutLinks = [
