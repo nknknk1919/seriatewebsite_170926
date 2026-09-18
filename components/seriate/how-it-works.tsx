@@ -144,8 +144,8 @@ export function HowItWorks() {
             const item = offerings[3]
             const Icon = item.icon
             return (
-              <div className="mt-6 flex w-full flex-col items-center justify-between gap-6 rounded-2xl border border-slate-200 bg-slate-50 p-8 shadow-sm transition-transform hover:-translate-y-1 md:flex-row">
-                <div className="flex-1">
+              <div className="mt-6 flex w-full flex-col items-center justify-between gap-8 rounded-2xl border border-slate-200 bg-slate-50 p-8 shadow-sm transition-transform hover:-translate-y-1 md:col-span-3 md:flex-row md:px-10">
+                <div className="flex-1 md:max-w-3xl">
                   <div className="mb-6 flex size-12 items-center justify-center rounded-full bg-cobalt/10">
                     <Icon className="size-6 text-cobalt" />
                   </div>
