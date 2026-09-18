@@ -12,8 +12,9 @@ export function Hero() {
     <section id="technology" className="relative overflow-hidden bg-slate-50">
       {/* ... keeping the background SVGs and divs untouched ... */}
       {/* Uploaded Image Background 1 (Subtle - Full Image Visible) */}
-      <div 
-        className="absolute inset-0 z-0 bg-[url('/hero-machine.jpg')] bg-contain bg-center bg-no-repeat opacity-[0.07] mix-blend-multiply" 
+      <div
+        className="absolute inset-0 z-0 bg-contain bg-center bg-no-repeat opacity-[0.07] mix-blend-multiply"
+        style={{ backgroundImage: 'url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Website_Background_Design-uCmFCtoLfsBlDAouVER1rpwOnukXzP.png")' }}
       />
 
       {/* Abstract Modular Flowsheet & DCS Background */}
