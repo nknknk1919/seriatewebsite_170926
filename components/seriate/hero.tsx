@@ -12,8 +12,9 @@ export function Hero() {
     <section id="technology" className="relative overflow-hidden bg-slate-50">
       {/* ... keeping the background SVGs and divs untouched ... */}
       {/* Uploaded Image Background 1 (Subtle - Full Image Visible) */}
-      <div 
-        className="absolute inset-0 z-0 bg-[url('/hero-machine.jpg')] bg-contain bg-center bg-no-repeat opacity-[0.07] mix-blend-multiply" 
+      <div
+        className="absolute inset-0 z-0 bg-contain bg-center bg-no-repeat opacity-[0.07] mix-blend-multiply"
+        style={{ backgroundImage: 'url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Website_Background_Design-uCmFCtoLfsBlDAouVER1rpwOnukXzP.png")' }}
       />
 
       {/* Abstract Modular Flowsheet & DCS Background */}
@@ -33,33 +34,6 @@ export function Hero() {
           <circle cx="625" cy="300" r="6" fill="#0f5a91" />
           <circle cx="775" cy="200" r="6" fill="#0f5a91" />
 
-          {/* Abstract DCS Control Screen (Top Right) */}
-          <g transform="translate(750, 40)">
-            {/* Monitor Bezel */}
-            <rect x="0" y="0" width="220" height="140" rx="6" fill="none" stroke="#1575bb" strokeWidth="4" />
-            {/* Top bar */}
-            <rect x="0" y="0" width="220" height="20" rx="6" fill="#1575bb" opacity="0.6" />
-            
-            {/* Reactor Tank Schematic on Screen */}
-            <path d="M140,50 L140,90 A20,10 0 0,0 180,90 L180,50 A20,10 0 0,0 140,50 Z" fill="none" stroke="#1575bb" strokeWidth="3" />
-            <path d="M140,50 A20,10 0 0,0 180,50" fill="none" stroke="#1575bb" strokeWidth="3" />
-            <line x1="160" y1="35" x2="160" y2="85" stroke="#0f5a91" strokeWidth="3" />
-            <path d="M145,65 L175,75 M145,75 L175,85" stroke="#0f5a91" strokeWidth="3" />
-            
-            {/* Control Graph on Screen */}
-            <rect x="15" y="35" width="100" height="60" fill="none" stroke="#1575bb" strokeWidth="3" />
-            <polyline points="15,80 35,55 55,70 75,40 95,50 115,25" fill="none" stroke="#0f5a91" strokeWidth="3" />
-            <polyline points="15,90 40,85 60,95 85,70 115,75" fill="none" stroke="#1575bb" strokeWidth="2" strokeDasharray="4 2" />
-            
-            {/* Dials / Control Knobs on Screen */}
-            <circle cx="30" cy="115" r="8" fill="none" stroke="#1575bb" strokeWidth="3" />
-            <circle cx="65" cy="115" r="8" fill="none" stroke="#1575bb" strokeWidth="3" />
-            <circle cx="100" cy="115" r="8" fill="none" stroke="#1575bb" strokeWidth="3" />
-            
-            {/* Connecting pipe from Tank */}
-            <polyline points="160,100 160,120 130,120" fill="none" stroke="#1575bb" strokeWidth="3" />
-            <circle cx="125" cy="120" r="6" fill="#0f5a91" />
-          </g>
         </svg>
       </div>
 

@@ -101,8 +101,8 @@ const offerings = [
   },
   {
     icon: Microscope,
-    title: 'Consultation & Rheological Analysis',
-    desc: 'Expert guidance to determine the most appropriate rheological testing protocols for your specific sample and application, complete with comprehensive analytical reports.',
+title: 'Consultation, Rheological Analysis & Accelerated Stability Testing',
+  desc: 'Expert guidance to determine the most appropriate rheological and stability testing protocols for your specific sample and application, complete with comprehensive analytical reports and predictive shelf-life insights.',
   }
 ]
 
@@ -126,27 +126,41 @@ export function HowItWorks() {
           </p>
         </div>
 
-        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {offerings.map((item, index) => {
+        <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-3">
+          {offerings.slice(0, 3).map((item) => {
             const Icon = item.icon
             return (
-              <div key={item.title} className="relative rounded-2xl border border-slate-200 bg-slate-50 p-8 shadow-sm transition-transform hover:-translate-y-1 flex flex-col">
-                <div className="flex size-12 items-center justify-center rounded-full bg-cobalt/10 mb-6">
+              <div key={item.title} className="relative flex h-full flex-col rounded-2xl border border-slate-200 bg-slate-50 p-8 shadow-sm transition-transform hover:-translate-y-1">
+                <div className="mb-6 flex size-12 items-center justify-center rounded-full bg-cobalt/10">
                   <Icon className="size-6 text-cobalt" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">{item.title}</h3>
-                <p className="text-sm leading-relaxed text-slate-600 flex-grow">{item.desc}</p>
-                {item.title === 'Consultation & Rheological Analysis' && (
-                  <a 
-                    href="#contact" 
-                    className="mt-6 inline-flex w-full items-center justify-center rounded-lg bg-cobalt px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-cobalt/90 transition-colors"
-                  >
-                    Connect with an Expert Now
-                  </a>
-                )}
+                <h3 className="mb-3 text-xl font-bold text-slate-900">{item.title}</h3>
+                <p className="flex-grow text-sm leading-relaxed text-slate-600">{item.desc}</p>
               </div>
             )
           })}
+
+          {(() => {
+            const item = offerings[3]
+            const Icon = item.icon
+            return (
+              <div className="mt-6 flex w-full flex-col items-center justify-between gap-8 rounded-2xl border border-slate-200 bg-slate-50 p-8 shadow-sm transition-transform hover:-translate-y-1 md:col-span-3 md:flex-row md:px-10">
+                <div className="flex-1 md:max-w-3xl">
+                  <div className="mb-6 flex size-12 items-center justify-center rounded-full bg-cobalt/10">
+                    <Icon className="size-6 text-cobalt" />
+                  </div>
+                  <h3 className="mb-3 text-xl font-bold text-slate-900">{item.title}</h3>
+                  <p className="text-sm leading-relaxed text-slate-600">{item.desc}</p>
+                </div>
+                <a
+                  href="#contact"
+                  className="inline-flex w-full items-center justify-center rounded-lg bg-cobalt px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-cobalt/90 md:w-auto"
+                >
+                  Connect with an Expert Now
+                </a>
+              </div>
+            )
+          })()}
         </div>
       </div>
     </section>
