@@ -34,8 +34,8 @@ export function Hero() {
           <circle cx="625" cy="300" r="6" fill="#0f5a91" />
           <circle cx="775" cy="200" r="6" fill="#0f5a91" />
 
-          {/* Abstract DCS Control Screen (Top Right) */}
-          <g transform="translate(750, 40)">
+          {/* Abstract DCS Control Screen (Bottom Left) */}
+          <g transform="translate(60, 240)">
             {/* Monitor Bezel */}
             <rect x="0" y="0" width="220" height="140" rx="6" fill="none" stroke="#1575bb" strokeWidth="4" />
             {/* Top bar */}
