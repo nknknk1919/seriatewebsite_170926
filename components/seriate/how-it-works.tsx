@@ -101,8 +101,8 @@ const offerings = [
   },
   {
     icon: Microscope,
-    title: 'Consultation & Rheological Analysis',
-    desc: 'Expert guidance to determine the most appropriate rheological testing protocols for your specific sample and application, complete with comprehensive analytical reports.',
+title: 'Consultation, Rheological Analysis & Accelerated Stability Testing',
+  desc: 'Expert guidance to determine the most appropriate rheological and stability testing protocols for your specific sample and application, complete with comprehensive analytical reports and predictive shelf-life insights.',
   }
 ]
 
@@ -136,7 +136,7 @@ export function HowItWorks() {
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 mb-3">{item.title}</h3>
                 <p className="text-sm leading-relaxed text-slate-600 flex-grow">{item.desc}</p>
-                {item.title === 'Consultation & Rheological Analysis' && (
+                {item.title === 'Consultation, Rheological Analysis & Accelerated Stability Testing' && (
                   <a 
                     href="#contact" 
                     className="mt-6 inline-flex w-full items-center justify-center rounded-lg bg-cobalt px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-cobalt/90 transition-colors"
